@@ -1,0 +1,291 @@
+body{
+	background:url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm27-ning-36-background.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=84e5ecdcdfa1410aad1525a03b5ab542);
+	background-size: cover;
+}
+#nav1{
+	color: #3ECC00;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 800;
+	animation-name: view;
+	animation-duration: 10s;
+}
+
+@keyframes view{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+#filter{
+	display: inline-block;
+	float: left;
+	height: 730px;
+	margin-top: 10px;
+	overflow-y: scroll;
+	padding: 20px;
+	color: white;
+	margin-right: 200px;
+}
+#filter h2{
+	text-align: center;
+	color: #F9F502;
+}
+#filter form label{
+	font-size: 16px;
+	color:#F9F502;
+}
+#sub{
+	margin-left: 45px;
+	font-size: 20px;
+	background-color: #001BB4;
+	color: white;
+}
+form{
+	color:#04E3FD; 
+}
+
+#adv{
+	margin: auto;
+	margin-bottom: 30px;
+	opacity: 0;
+	position: relative;
+	text-align: center;
+	color: #FB7F04;
+	animation-name: advertise;
+	animation-delay: 5s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes advertise{
+	from{
+		opacity: 0;
+		font-size: 20px;
+		font-weight: 300;
+	}
+	to{
+		opacity: 1;
+		font-size: 40px;
+		font-weight: 600;
+	}
+}
+#arr{
+	padding-top: 10px;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	font-size: 100px;
+	color: #24C81D;
+	opacity: 0;
+	animation-name: arrow;
+	animation-duration: 0.25s;
+	animation-delay: 5.2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes arrow{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+#container {
+  width: 45%;
+  height: 550px;
+  display: flex;
+  margin-left: 340px;
+  margin-top: 190px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  position: absolute;
+  animation: fade 1s ease-in forwards;
+}
+#box1{
+	width: 80%;
+	height: 400px;
+	position: absolute;
+	background-color: #fff;
+	animation: slide1 1.5s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+@keyframes slide1{
+	0% {
+    width: 0%;
+    left: 10%;
+    opacity: 0;
+  }
+  100% {
+    width: 80%;
+    left: 10%;
+    opacity: 1;
+  }
+}
+img{
+	width: 350px;
+	height: 300px;
+	position: absolute;
+	left: -100px;
+	top: 20px;
+	animation: fade 9s ease-in-out forwards;
+}
+@keyframes fade{
+	0% {
+    opacity: 0;
+  }
+  25%{
+  	opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+#review{
+	width: 175px;
+	height: 50px;
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	animation: review 3.5s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+@keyframes review{
+  0% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+#video{
+	display: flex;
+	text-align: center;
+	position: absolute;
+	bottom: 2px;
+}
+#video i{
+	width: 50px;
+	height: 50px;
+	display: inline;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	border: 2px solid red;
+	border-radius: 50%;
+}
+#video p{
+	margin-left: 15px;
+	font-size: 16px;
+}
+#product-des{
+	width: 60%;
+	height: 310px;
+	display: flex;
+	background: #FBF407;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left:230px;
+	top: 20px;
+	animation: slide2 2.5s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+@keyframes slide2{
+  0% {
+    width: 00%;
+    left: 230px;
+  }
+  100% {
+    width: 60%;
+    left: 230px;
+  }
+}
+#des-content{
+	width: 80%
+	height:80%;
+	padding: 5px;
+	padding-left: 20px;
+	justify-content: space-between;
+	position: relative;
+	flex-direction: column;
+	animation: fade 10s ease-in-out forwards;
+}
+
+#view-more{
+	font-weight: 800;
+	text-align: center;
+	cursor: pointer;
+}
+#product_buttons{
+	width: 60%;
+	height: 60px;
+	position: absolute;
+	left:230px;
+	bottom: 0px;
+	animation: prb 3s ease-in-out forwards;
+}
+#btn-wishlist{
+	width: 45%;
+	font-size: 30px;
+	text-align: center;
+	background:#00F7BB;
+	border-radius: 20px;
+}
+@keyframes prb{
+	0%{
+		opacity: 0;
+		bottom: -5px;
+	}
+	90%{
+		opacity:0;
+		bottom:-2px;
+	}
+	100%{
+		opacity:1;
+		bottom:0px;
+	}
+}
+
+
+#btn-buy{
+	width: 45%;
+	font-size: 30px;
+	text-align: center;
+	margin-left: 25px;
+	background:#2BFF48;
+	border-radius: 20px;
+}
+
+#texto{
+	width: 50%;
+	background-color:#CF0F9E;
+	margin-top: 20px;
+	position: absolute;
+	right: 30px;
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	bottom:3px;
+	text-align: center;
+	animation: texto 3s ease-in-out forwards;
+}
+@keyframes texto{
+	0%{
+		opacity: 0;
+		bottom: -25px;
+	}
+	100%{
+		opacity: 1;
+		bottom:0px;
+	}
+}
+
+
